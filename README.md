@@ -16,10 +16,10 @@ const math = require("math-api");
 const svgImageContent = math.renderLatex({
 	// required
 	content: "\\log\\prod^N_{i}x_{i}=\\sum^N_i\\log{x_i}",
-	
+
 	// optional (default values are shown here)
 	mode: "block", // or "inline"
-	color: "black"
+	color: "black",
 });
 
 // inline svgImageContent in your html
