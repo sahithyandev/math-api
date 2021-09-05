@@ -1,6 +1,7 @@
 ## Unreleased
 
 - Added ESM build
+- Changed to `GPL-3.0-only` license
 
 ## v0.0.1
 

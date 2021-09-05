@@ -16,7 +16,7 @@
 	],
 	"keywords": [],
 	"author": "Sahithyan <sahithyan2701@gmail.com>",
-	"license": "ISC",
+	"license": "GPL-3.0-only",
 	"devDependencies": {
 		"@rollup/plugin-typescript": "^8.2.5",
 		"@types/node": "^16.7.10",
