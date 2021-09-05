@@ -1,33 +1,33 @@
 {
-  "name": "math-api",
-  "version": "0.0.1",
-  "main": "lib/main.js",
-  "scripts": {
-    "build": "rollup --config rollup.config.ts --configPlugin typescript",
-    "lint": "eslint .",
-    "prettier-check": "prettier -c .",
-    "prettier-fix": "prettier -w .",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "directories": {
-    "lib": "lib"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
-  "devDependencies": {
-    "@rollup/plugin-typescript": "^8.2.5",
-    "@types/node": "^16.7.10",
-    "@typescript-eslint/eslint-plugin": "^4.30.0",
-    "@typescript-eslint/parser": "^4.30.0",
-    "eslint": "^7.32.0",
-    "prettier": "2.3.2",
-    "rollup": "^2.56.3",
-    "tslib": "^2.3.1",
-    "typescript": "^4.4.2"
-  },
-  "dependencies": {
-    "mathjax-full": "^3.2.0"
-  }
+	"name": "math-api",
+	"version": "0.0.1",
+	"main": "lib/main.js",
+	"scripts": {
+		"build": "rollup --config rollup.config.ts --configPlugin typescript",
+		"lint": "eslint .",
+		"prettier-check": "prettier -c .",
+		"prettier-fix": "prettier -w .",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"directories": {
+		"lib": "lib"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"description": "",
+	"devDependencies": {
+		"@rollup/plugin-typescript": "^8.2.5",
+		"@types/node": "^16.7.10",
+		"@typescript-eslint/eslint-plugin": "^4.30.0",
+		"@typescript-eslint/parser": "^4.30.0",
+		"eslint": "^7.32.0",
+		"prettier": "2.3.2",
+		"rollup": "^2.56.3",
+		"tslib": "^2.3.1",
+		"typescript": "4.3.5"
+	},
+	"dependencies": {
+		"mathjax-full": "^3.2.0"
+	}
 }
