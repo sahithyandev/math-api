@@ -1,4 +1,5 @@
 import typescript from "@rollup/plugin-typescript";
+import generateTypes from "./plugins/generate-types";
 
 export default {
 	input: "main.ts",
@@ -7,6 +8,6 @@ export default {
 		dir: "lib",
 		format: "cjs",
 	},
-	plugins: [typescript()],
+	plugins: [typescript(), generateTypes()],
 	external: ["mathjax-full/js/*"],
 };
