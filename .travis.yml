@@ -2,10 +2,17 @@ language: node_js
 cache: npm
 jobs:
   include:
-    - stage: Build
-      script: npm run build
     - stage: Code style check
       name: ESLint
       script: npm run lint
     - name: Prettier
       script: npm run prettier-check
+    - stage: Build
+      script: npm run build
+    - stage: Publish to npm
+      script: echo "Publishing to npm..."
+      deploy:
+        on:
+          branch: release
+        provider: npm
+        api_key: $NPM_API_KEY
