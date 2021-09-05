@@ -10,21 +10,21 @@ const adaptor = new LiteAdaptor();
 RegisterHTMLHandler(adaptor);
 
 const html = mathjax.document("", {
-  InputJax: new TeX({ packages: AllPackages }),
-  OutputJax: new SVG({ fontCache: "none" }),
+	InputJax: new TeX({ packages: AllPackages }),
+	OutputJax: new SVG({ fontCache: "none" }),
 });
 
 export function tex2svg(
-  equation: string,
-  isInline: boolean,
-  color?: string,
-  alternateColor?: string
+	equation: string,
+	isInline: boolean,
+	color?: string,
+	alternateColor?: string
 ): string {
-  const svg = adaptor
-    .innerHTML(html.convert(equation, { display: !isInline }))
-    .replace(
-      /(?<=<svg.+?>)/,
-      `
+	const svg = adaptor
+		.innerHTML(html.convert(equation, { display: !isInline }))
+		.replace(
+			/(?<=<svg.+?>)/,
+			`
 <style>
   * {
     fill: ${color || "black"};
@@ -35,9 +35,9 @@ export function tex2svg(
     }
   }
 </style>`
-    );
-  if (svg.includes("merror")) {
-    return svg.replace(/<rect.+?><\/rect>/, "");
-  }
-  return svg;
+		);
+	if (svg.includes("merror")) {
+		return svg.replace(/<rect.+?><\/rect>/, "");
+	}
+	return svg;
 }

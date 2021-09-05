@@ -1,8 +1,8 @@
 {
-  "compilerOptions": {
-    "lib": ["ES2020"],
-    "moduleResolution": "node"
-  },
-  "include": ["."],
-  "exclude": ["node_modules/**/*"]
+	"compilerOptions": {
+		"lib": ["ES2020"],
+		"moduleResolution": "node"
+	},
+	"include": ["."],
+	"exclude": ["node_modules/**/*"]
 }
