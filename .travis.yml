@@ -1,0 +1,9 @@
+language: node_js
+include:
+  - stage: Build
+    script: npm run build
+  - stage: Code style check
+    name: ESLint
+    script: npm run lint
+  - name: Prettier
+    script: npm run prettier-check
