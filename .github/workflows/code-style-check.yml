@@ -1,0 +1,21 @@
+name: Style check
+
+on: [push, pull_request]
+
+jobs:
+  prettier-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Setup Node.js 15.x
+        uses: actions/setup-node@v2
+        with:
+          node-version: 15.x
+
+      - name: Install deps
+        run: npm install
+
+      - name: Run prettier
+        run: npm run prettier-check
