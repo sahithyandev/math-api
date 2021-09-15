@@ -1,7 +1,7 @@
 {
 	"name": "math-api",
 	"description": "math.now.sh API ported as a npm package",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"main": "lib/main.js",
 	"scripts": {
 		"build": "rollup --config rollup.config.ts --configPlugin typescript",
