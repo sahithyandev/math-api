@@ -14,7 +14,10 @@
 	"files": [
 		"lib"
 	],
-	"keywords": [],
+	"keywords": [
+		"math",
+		"latex"
+	],
 	"author": "Sahithyan <sahithyan2701@gmail.com>",
 	"license": "GPL-3.0-only",
 	"devDependencies": {
